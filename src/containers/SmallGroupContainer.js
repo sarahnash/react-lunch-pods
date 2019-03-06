@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import User from '../components/User.js'
 
+// TODO: select my group function opens modal with small group details
+// TODO: Chat functionality
+
 class SmallGroupContainer extends Component {
   render() {
     return (

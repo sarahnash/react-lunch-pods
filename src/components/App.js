@@ -2,16 +2,17 @@ import React, { Component } from 'react';
 import User from './User.js'
 import Event from './Event.js'
 import LargeGroupContainer from '../containers/LargeGroupContainer.js'
-import { Heading } from 'react-bulma-components';
 import MoreInfoContainer from '../containers/MoreInfoContainer.js';
+
+// TODO: add administrator's sort button sends sort action and renders small groups
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-          <Heading>
+          <div className="Heading">
             Lunch pods!
-          </Heading>
+          </div>
           <User />
           <Event />
           <LargeGroupContainer />

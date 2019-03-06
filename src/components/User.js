@@ -1,21 +1,29 @@
 import React, { Component } from 'react'
-import { Card, Media, Heading } from 'react-bulma-components'
+import { Media } from 'react-bootstrap'
+import { connect } from 'react-redux'
+
+// TODO: pass users in as props
+// TODO: hover action brings up user details
 
 class User extends Component {
+  constructor(props) {
+    super(props)
+  }
   render() {
     return (
-      <Card>
-      <Card.Content>
-        <Media>
-          <Card.Image size={64} alt="64x64" src="http://bulma.io/images/placeholders/128x128.png"/>
-          <Media.Item>
-            <Heading size={4}>This is a User</Heading>
-          </Media.Item>
-        </Media>
-      </Card.Content>
-      </Card>
+     <Media>
+  <Media.Body>
+      <img width={64} height={64} src={this.props.users[1].Photo}/>
+      <div><a href={this.props.users.Link}>{this.props.users.Name}</a>
+      </div>
+  </Media.Body>
+</Media>
     )
   }
 }
 
-export default User
+const mapStateToProps = (state) => ({
+  users: state.users
+})
+
+export default connect(mapStateToProps) (User);
