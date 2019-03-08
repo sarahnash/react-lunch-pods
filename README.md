@@ -1,3 +1,37 @@
+# React Project Requirements
+
+These are the requirements for the Phase 3 React project for the Flex course at
+[DigitalCrafts] Houston. It is focused on using [React.js] with [Redux].
+
+> NOTE: This project is completed in accordance with the requirements laid out
+  below in order to fulfill Texas state requirements for credit for the course.
+
+[DigitalCrafts]:https://www.digitalcrafts.com/
+[React.js]:https://reactjs.org/
+[Redux]:https://redux.js.org/
+
+## Project Description
+
+This web application uses [React.js] and [Redux] to create a team building experience by allowing members to sign up for and attend a random lunch group with colleagues.
+
+Members RSVP to the event and receive an Outlook calendar hold (future feature).  On the morning of the event, the app randomly sorts members into lunch groups for the day.  Members can preview the profiles of other people in their lunch group.
+
+## Project Requirements
+
+- [React.js] and [Redux] to manage the state of a frontend application.
+  - [react-redux]
+
+## Bonus Requirements
+
+-  external library, loaded via `npm`
+  - [react-bootstrap](https://react-bootstrap.github.io/), etc
+- Persist your Redux store somewhere like `localStorage` or an external database
+  - When the user refreshes your page you should be able to load exactly the same state they were in when they left the page
+
+[react-redux]:https://react-redux.js.org/
+
+--------------------------------------------------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
