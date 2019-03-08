@@ -7,9 +7,9 @@ class Event extends Component {
 
     this.state = {
       user:{
-        Photo: '../assets/sarah-headshot.jpg',
-        Name: 'Sarah',
-        Link: 'http://sarahnash.dev/'
+        photo: '../assets/sarah-headshot.jpg',
+        name: 'Sarah',
+        link: 'http://sarahnash.dev/'
       },
       yesButton: false,
       noButton: true,
@@ -37,13 +37,12 @@ class Event extends Component {
   }
 
   render() {
-    console.log('props', this.props)
     return (
       <div>
         <span>May 7, 2019</span>
-        <h1 className="pageHead-headline text--pageTitle">Inaugural Lunch Pods!</h1>
-          <span className="text--secondary text--small">Hosted by 
-          <span className="link">Finneus Dolphin</span>
+        <h2>Inaugural Lunch Pods!</h2>
+          <span>Hosted by 
+          <span >Finneus Dolphin</span>
           </span>
               <span>Are you going?</span>
               <span>{this.props.users.length} people going</span>

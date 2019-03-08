@@ -1,14 +1,14 @@
 const initialState = {
   users: [
     {
-      Photo: '../assets/chris-oakman-headshot-medium.jpg',
-      Name: 'Chris',
-      Link: 'http://chrisoakman.com/'
+      photo: '../assets/chris-oakman-headshot-medium.jpg',
+      name: 'Chris',
+      link: 'http://chrisoakman.com/'
     },
     {
-      Photo: '../assets/eli-2-web.jpg',
-      Name: 'Eli',
-      Link: 'https://elibadgio.com/'
+      photo: '../assets/eli-2-web.jpg',
+      name: 'Eli',
+      link: 'https://elibadgio.com/'
     }
   ],
   largeGroup: [],

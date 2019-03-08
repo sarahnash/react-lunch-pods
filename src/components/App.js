@@ -10,10 +10,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <div className="Heading">
+          <h1>
             Lunch pods!
-          </div>
-          <User />
+          </h1>
           <Event />
           <LargeGroupContainer />
           <MoreInfoContainer />

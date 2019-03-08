@@ -1,14 +1,5 @@
-import React, { Component } from 'react'
-import User from './User';
-
-class UserDetails extends Component {
-  render() {
-    return (
+const render = (state) => {
       <div>
-        When you hover over a user these will pop up.
+        When you hover over a user the user detail will pop up.
       </div>
-    )
-  }
 }
-
-export default UserDetails
