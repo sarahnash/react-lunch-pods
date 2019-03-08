@@ -1,24 +1,38 @@
 import React, { Component } from 'react'
+import UserDetails from '../components/UserDetails'
 
-// TODO: hover action brings up user details
+// TODO: how to exit modal on MouseLeave and not click out
+// or possibly popover
 
 class User extends Component {
+  constructor(props) {
+    super(props)
 
-  hover() {
-    console.log('hover!')
+    this.state = {modalShow: false}
+    this.hover = this.hover.bind(this)
+    this.exitHover = this.exitHover.bind(this)
   }
 
-  exitHover() {
-    console.log('stop hovering!')
+  hover(event) {
+    event.preventDefault()
+    this.setState({ modalShow: true })
+  }
+
+  exitHover(event){
+    event.preventDefault()
+    this.setState({ modalShow: true })
   }
 
   render() {
+    let modalClose = () => this.setState({ modalShow: false });
+
     return (
      <div>
         <img width={64} height={64} src={this.props.photo} onMouseEnter={this.hover} onMouseLeave={this.exitHover}/>
         <div>
           {this.props.name}
         </div>
+        <UserDetails name={this.props.name} show={this.state.modalShow} onHide={modalClose}/>
       </div>
     )
   }

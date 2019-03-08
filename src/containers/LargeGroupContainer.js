@@ -9,9 +9,9 @@ class LargeGroupContainer extends Component {
 
   render() {
     return (
-      <div className="box">
+      <div>
         <div>
-          {this.props.users.map(user => <User {...user}/>)}
+          {this.props.users.map((user, index) => <User {...user} key={index}/>)}
         </div>
       </div>
     )

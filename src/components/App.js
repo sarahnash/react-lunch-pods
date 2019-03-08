@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import User from './User.js'
 import Event from './Event.js'
 import LargeGroupContainer from '../containers/LargeGroupContainer.js'
 import MoreInfoContainer from '../containers/MoreInfoContainer.js';
