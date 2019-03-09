@@ -70,31 +70,6 @@ const initialState = {
       name: 'Eric',
       link: 'https://www.linkedin.com/in/eric-ridenour-253a74109/'
     },
-    {
-      photo: '../assets/eli-2-web.jpg',
-      name: 'Eli',
-      link: 'https://elibadgio.com/'
-    },
-    {
-      photo: '../assets/amanda-shih.jpeg',
-      name: 'Amanda',
-      link: 'https://github.com/pandafulmanda'
-    },
-    {
-      photo: '../assets/eric.jpeg',
-      name: 'Eric',
-      link: 'https://www.linkedin.com/in/eric-ridenour-253a74109/'
-    },
-    {
-      photo: '../assets/eric.jpeg',
-      name: 'Eric',
-      link: 'https://www.linkedin.com/in/eric-ridenour-253a74109/'
-    },
-    {
-      photo: '../assets/eric.jpeg',
-      name: 'Eric',
-      link: 'https://www.linkedin.com/in/eric-ridenour-253a74109/'
-    },
   ],
   smallGroups: [],
   myGroup: [],

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import User from '../components/User.js'
+import SmallGroup from '../components/SmallGroup.js'
+import { connect } from 'react-redux'
 
 // TODO: sort will mount small group container
 // TODO: select my group function will mount small group details
@@ -8,17 +9,16 @@ class SmallGroupContainer extends Component {
   render() {
     return (
       <div className="box">
-        <h2>
-          Small group container will hold all the user components in a sorted group
-        </h2>
         <div>
-          <User />
-          <User />
-          <User />
+        {this.props.smallGroups.map((smallGroup, index) => <SmallGroup {...smallGroup} key={index}/>)}
         </div>
       </div>
     )
   }
 }
 
-export default SmallGroupContainer
+const mapStateToProps = (state) => ({
+  smallGroups: state.smallGroups
+})
+
+export default connect(mapStateToProps) (SmallGroupContainer);
