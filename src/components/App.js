@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Event from './Event.js'
 import LargeGroupContainer from '../containers/LargeGroupContainer.js'
-import MoreInfoContainer from '../containers/MoreInfoContainer.js';
+import AdminSort from './AdminSort'
 
 // TODO: add administrator's sort button sends sort action and renders small groups
 
@@ -14,7 +14,7 @@ class App extends Component {
           </h1>
           <Event />
           <LargeGroupContainer />
-          <MoreInfoContainer />
+          <AdminSort/>
       </div>
     );
   }

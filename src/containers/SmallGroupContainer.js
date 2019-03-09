@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import User from '../components/User.js'
 
-// TODO: select my group function opens modal with small group details
-// TODO: Chat functionality
+// TODO: sort will mount small group container
+// TODO: select my group function will mount small group details
 
 class SmallGroupContainer extends Component {
   render() {

@@ -3,10 +3,6 @@ import User from '../components/User.js'
 import { connect } from 'react-redux'
 
 class LargeGroupContainer extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <div>

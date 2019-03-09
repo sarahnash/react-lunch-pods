@@ -28,7 +28,7 @@ class User extends Component {
 
     return (
      <div>
-        <img width={64} height={64} src={this.props.photo} onMouseEnter={this.hover} onMouseLeave={this.exitHover}/>
+        <img width={64} height={64} src={this.props.photo} onMouseEnter={this.hover} onMouseLeave={this.exitHover} alt={this.props.name}/>
         <div>
           {this.props.name}
         </div>
