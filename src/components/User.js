@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import UserDetails from '../components/UserDetails'
+import Col from 'react-bootstrap/Col'
 
 // TODO: how to exit modal on MouseLeave and not click out
 // or possibly popover
@@ -27,13 +28,13 @@ class User extends Component {
     let modalClose = () => this.setState({ modalShow: false });
 
     return (
-     <div>
+     <Col>
         <img width={64} height={64} src={this.props.photo} onMouseEnter={this.hover} onMouseLeave={this.exitHover} alt={this.props.name}/>
         <div>
           {this.props.name}
         </div>
         <UserDetails name={this.props.name} show={this.state.modalShow} onHide={modalClose}/>
-      </div>
+      </Col>
     )
   }
 }
