@@ -1,5 +1,3 @@
-import { stringify } from "querystring";
-
 const initialState = {
   users: [
     {
@@ -72,6 +70,31 @@ const initialState = {
       name: 'Eric',
       link: 'https://www.linkedin.com/in/eric-ridenour-253a74109/'
     },
+    {
+      photo: '../assets/eli-2-web.jpg',
+      name: 'Eli',
+      link: 'https://elibadgio.com/'
+    },
+    {
+      photo: '../assets/amanda-shih.jpeg',
+      name: 'Amanda',
+      link: 'https://github.com/pandafulmanda'
+    },
+    {
+      photo: '../assets/eric.jpeg',
+      name: 'Eric',
+      link: 'https://www.linkedin.com/in/eric-ridenour-253a74109/'
+    },
+    {
+      photo: '../assets/eric.jpeg',
+      name: 'Eric',
+      link: 'https://www.linkedin.com/in/eric-ridenour-253a74109/'
+    },
+    {
+      photo: '../assets/eric.jpeg',
+      name: 'Eric',
+      link: 'https://www.linkedin.com/in/eric-ridenour-253a74109/'
+    },
   ],
   smallGroups: [],
   myGroup: [],
@@ -99,23 +122,17 @@ const groupReducer = (state = initialState, action) => {
     participants.sort(function(a,b){return .5 - Math.random()}).slice()
     console.log('random sort of participants', participants)
       const splitParticipants = (participants) => {
-        let newSmallGroup = []
-        if (participants.length <= 6) {
-          newSmallGroup = participants
-          return {
-            ...state,
-          smallGroups: participants
+        let totalGroups = []
+        for (var i=1; i < participants.length / 4; i++) {
+          totalGroups.push([])
         }
-        } else if (participants.length > 6) {
-          while (participants.length > 6){
-            const removed = participants.splice(-4)
-            newSmallGroup.push(removed)
-          } 
-          newSmallGroup.push(participants)
+        console.log(totalGroups)
+        for (var j=0; j < participants.length; j++) {
+          totalGroups[(j%totalGroups.length)].push(participants[j])
         }
         return {
           ...state,
-          smallGroups: newSmallGroup
+          smallGroups: totalGroups
         }
       }
       return splitParticipants(participants)
