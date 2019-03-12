@@ -10,6 +10,7 @@ class AdminSort extends Component {
   render() {
     return (
       <div>
+        <br/>
         <h3>Admin Section Only</h3>
         <button id="Sort" type="button" onClick={(event) => this.sortUsers(event)}>Sort Lunch Pods!</button>
       </div>

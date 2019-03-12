@@ -9,10 +9,9 @@ import SmallGroupContainer from '../containers/SmallGroupContainer.js';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-          <h1>
-            Lunch pods!
-          </h1>
+      <div className="text-center">
+          <h1>Lunch pods!</h1>
+          <p>Sign up to have lunch with a random group of Fins</p>
           <Event />
           <LargeGroupContainer />
           <AdminSort/>

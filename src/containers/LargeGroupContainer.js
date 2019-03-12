@@ -7,6 +7,7 @@ class LargeGroupContainer extends Component {
   render() {
     return (
       <div>
+        <br/>
         <Row>
           {this.props.users.map((user, index) => <User {...user} key={index}/>)}
         </Row>

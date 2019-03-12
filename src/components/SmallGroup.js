@@ -6,18 +6,14 @@ import User from './User'
 class SmallGroup extends Component {
   render() {
     return (
+      console.log('smallgroup props', this.props),
       <div>
         <Row>
-        {this.props.users.map((user, index) => <User {...user} key={index}/>)}
+        {this.props.users(this.props).map((user, index) => <User {...user} key={index}/>)}
         </Row>
       </div>
     )
   }
 }
 
-const mapStateToProps = (state) => ({
-  users: state.users,
-  smallGroups: state.smallGroups
-})
-
-export default connect(mapStateToProps) (SmallGroup)
+export default SmallGroup;

@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import Button from 'react-bootstrap/Button'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Image from 'react-bootstrap/Image'
 
 class Event extends Component {
   constructor(props) {
@@ -39,19 +43,23 @@ class Event extends Component {
   render() {
     return (
       <div>
-        <span>May 7, 2019</span>
-        <h2>Inaugural Lunch Pods!</h2>
-          <span>Hosted by 
-          <span >Finneus Dolphin</span>
-          </span>
-              <span>Are you going?</span>
-              <span>{this.props.users.length} people going</span>
-              <button id="Going" type="button" disabled={this.state.yesButton} onClick={(event) => this.handleSubmit(event, true)}>
-              Yes
-              </button>
-              <button id="Declined" type="button" disabled={this.state.noButton} onClick={(event) => this.handleSubmit(event, false)}>
-              No
-              </button>
+        <br/>
+        <Row>
+          <Col>
+            <h4>May 7, 2019</h4>
+            <h2><b>Inaugural Lunch Pods!</b></h2>
+            <p>Hosted by Finneus Dolphin <Image width={42} height={42} src='../assets/Finneus.png' roundedCircle/></p>
+          </Col>
+          <Col>
+            <p><b>Are you going?</b>  {this.props.users.length} people going</p>
+            <Button id="Going" variant="info" type="button" disabled={this.state.yesButton} onClick={(event) => this.handleSubmit(event, true)}>
+            Yes
+            </Button>
+            <Button id="Declined" variant="info" type="button" disabled={this.state.noButton} onClick={(event) => this.handleSubmit(event, false)}>
+            No
+            </Button>
+          </Col>
+        </Row>
       </div>
     )
   }
