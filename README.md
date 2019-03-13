@@ -19,7 +19,7 @@ Members RSVP to the event and receive an Outlook calendar hold (future feature).
 ## Project Requirements
 
 - [React.js] and [Redux] to manage the state of a frontend application.
-  -[react-redux]:https://react-redux.js.org/
+- [react-redux]:https://react-redux.js.org/
 
 ## Bonus Requirements
 
