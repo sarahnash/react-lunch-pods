@@ -75,8 +75,6 @@ const initialState = {
   myGroup: [],
 }
 
-// TODO: need 2 more action types
-
 const groupReducer = (state = initialState, action) => {
   console.log(state)
   switch(action.type) {
@@ -111,6 +109,11 @@ const groupReducer = (state = initialState, action) => {
         }
       }
       return splitParticipants(participants)
+    case 'RESET_USERS':
+    return {
+      ...state,
+      smallGroups: []
+    }
     
     default:
       return state;

@@ -21,14 +21,15 @@ class User extends Component {
 
   render() {
     let modalClose = () => this.setState({ modalShow: false });
+    let { photo, name } = this.props.user
 
     return (
      <Col >
-        <Image width={128} height={128} src={this.props.photo} onClick={this.hover} alt={this.props.name} roundedCircle/>
+        <Image width={128} height={128} style={{cursor: 'pointer'}} src={photo} onClick={this.hover} alt={name} roundedCircle/>
         <div className="text-center">
-          {this.props.name}
+          {name}
         </div>
-        <UserDetails name={this.props.name} show={this.state.modalShow} onHide={modalClose}/>
+        <UserDetails name={name} show={this.state.modalShow} onHide={modalClose}/>
       </Col>
     )
   }

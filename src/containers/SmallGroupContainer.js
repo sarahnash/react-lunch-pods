@@ -9,10 +9,9 @@ import Row from 'react-bootstrap/Row'
 class SmallGroupContainer extends Component {
   render() {
     return (
-      console.log('container props', this.props),
       <div>
-        <Row>
-        {this.props.smallGroups.map((smallGroup, index) => <SmallGroup {...smallGroup} key={index}/>)}
+        <Row className="justify-content-md-center">
+        {this.props.smallGroups.map((smallGroup, index) => <SmallGroup smallGroup = {smallGroup} key={index}/>)}
         </Row>
       </div>
     )

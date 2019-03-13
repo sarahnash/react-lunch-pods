@@ -9,7 +9,7 @@ class LargeGroupContainer extends Component {
       <div>
         <br/>
         <Row>
-          {this.props.users.map((user, index) => <User {...user} key={index}/>)}
+          {this.props.users.map((user, index) => <User user={user} key={index}/>)}
         </Row>
       </div>
     )
