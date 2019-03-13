@@ -72,7 +72,6 @@ const initialState = {
     },
   ],
   smallGroups: [],
-  myGroup: [],
 }
 
 const groupReducer = (state = initialState, action) => {
@@ -111,12 +110,12 @@ const groupReducer = (state = initialState, action) => {
       return splitParticipants(participants)
     case 'RESET_USERS':
     return {
-      ...state,
-      smallGroups: []
+      smallGroups: [],
+      users: initialState.users
     }
     
     default:
-      return state;
+      return state
   }
 }
 

@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row'
 import User from './User'
 
 class SmallGroup extends Component {
+
   render() {
     return (
       <div>

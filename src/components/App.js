@@ -5,8 +5,6 @@ import AdminSort from './AdminSort'
 import SmallGroupContainer from '../containers/SmallGroupContainer.js';
 import { connect } from 'react-redux'
 
-// TODO: add administrator's sort button sends sort action and renders small groups
-
 class App extends Component {
   render() {
     const smallgroupsready = this.props.smallGroups[0];

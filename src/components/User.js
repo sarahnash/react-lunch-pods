@@ -3,9 +3,6 @@ import UserDetails from '../components/UserDetails'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
 
-// TODO: how to exit modal on MouseLeave and not click out
-// or possibly popover
-
 class User extends Component {
   constructor(props) {
     super(props)

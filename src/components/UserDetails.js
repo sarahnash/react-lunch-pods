@@ -11,9 +11,9 @@ class UserDetails extends Component {
       </Modal.Title>
     </Modal.Header>
     <Modal.Body>
-      <h4>More about {this.props.name}</h4>
+      <h4>Cohort Level and Current Client</h4>
       <p>
-        Something about the user will show here
+        Include links to their Ocean Profile, etc.
       </p>
     </Modal.Body>
 </Modal>
