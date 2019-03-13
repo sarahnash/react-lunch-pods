@@ -19,16 +19,13 @@ Members RSVP to the event and receive an Outlook calendar hold (future feature).
 ## Project Requirements
 
 - [React.js] and [Redux] to manage the state of a frontend application.
-  - [react-redux]
+  -[react-redux]:https://react-redux.js.org/
 
 ## Bonus Requirements
 
 -  external library, loaded via `npm`
   - [react-bootstrap](https://react-bootstrap.github.io/), etc
-- Persist your Redux store somewhere like `localStorage` or an external database
-  - When the user refreshes your page you should be able to load exactly the same state they were in when they left the page
 
-[react-redux]:https://react-redux.js.org/
 
 --------------------------------------------------------------------------------
 
