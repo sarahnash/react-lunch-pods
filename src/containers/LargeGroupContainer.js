@@ -8,7 +8,7 @@ class LargeGroupContainer extends Component {
     return (
       <div fluid>
         <br/>
-        <Row style={{paddingLeft: 5 + 'em', paddingRight: 5 + 'em'}}>
+        <Row style={{paddingLeft: 10 + 'em', paddingRight: 10 + 'em'}}>
           {this.props.users.map((user, index) => <User user={user} key={index}/>)}
         </Row>
       </div>
