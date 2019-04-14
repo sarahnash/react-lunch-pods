@@ -66,7 +66,8 @@ class Event extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  users: state.users
+  users: state.users,
+  smallGroups: state.smallGroups
 })
 
 const mapDispatchToProps = (dispatch) => ({

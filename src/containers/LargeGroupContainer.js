@@ -6,9 +6,9 @@ import Row from 'react-bootstrap/Row'
 class LargeGroupContainer extends Component {
   render() {
     return (
-      <div>
+      <div fluid>
         <br/>
-        <Row>
+        <Row style={{paddingLeft: 5 + 'em', paddingRight: 5 + 'em'}}>
           {this.props.users.map((user, index) => <User user={user} key={index}/>)}
         </Row>
       </div>

@@ -26,5 +26,17 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "These are the requirements for the Phase 3 React project for the Flex course at [DigitalCrafts] Houston. It is focused on using [React.js] with [Redux].",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahnash/lunch-pods.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarahnash/lunch-pods/issues"
+  },
+  "homepage": "https://github.com/sarahnash/lunch-pods#readme"
 }
